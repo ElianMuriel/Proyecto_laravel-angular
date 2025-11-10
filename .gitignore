@@ -1,0 +1,83 @@
+# =====================================
+# LARAVEL
+# =====================================
+
+# Archivos de entorno
+proyecto_crud/.env
+proyecto_crud/.env.*
+!proyecto_crud/.env.example
+proyecto_crud/.phpactor.json
+proyecto_crud/.phpunit.result.cache
+
+# Dependencias y build
+proyecto_crud/vendor/
+proyecto_crud/public/build
+proyecto_crud/public/hot
+proyecto_crud/public/storage
+proyecto_crud/storage/*.key
+proyecto_crud/storage/pail
+
+# Configuración de Homestead/Vagrant
+proyecto_crud/Homestead.json
+proyecto_crud/Homestead.yaml
+
+# Carpetas IDE
+proyecto_crud/.fleet
+proyecto_crud/.idea
+proyecto_crud/.nova
+proyecto_crud/.phpunit.cache
+proyecto_crud/.vscode
+proyecto_crud/.zed
+
+# =====================================
+# ANGULAR
+# =====================================
+
+# Compiled output
+task-app/dist
+task-app/tmp
+task-app/out-tsc
+task-app/bazel-out
+
+# Node modules
+task-app/node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+task-app/.idea/
+task-app/.project
+task-app/.classpath
+task-app/.c9/
+task-app/*.launch
+task-app/.settings/
+task-app/*.sublime-workspace
+
+# Visual Studio Code
+task-app/.vscode/*
+!task-app/.vscode/settings.json
+!task-app/.vscode/tasks.json
+!task-app/.vscode/launch.json
+!task-app/.vscode/extensions.json
+task-app/.history/*
+
+# Miscellaneous
+task-app/.angular/cache
+task-app/.sass-cache/
+task-app/connect.lock
+task-app/coverage
+task-app/libpeerconnection.log
+task-app/testem.log
+task-app/typings
+task-app/__screenshots__/
+
+
+# =====================================
+# GENERALES
+# =====================================
+
+# Logs y archivos del sistema
+*.log
+.DS_Store
+Thumbs.db
+
