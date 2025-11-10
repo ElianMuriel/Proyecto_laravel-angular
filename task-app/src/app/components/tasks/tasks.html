@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Task App (Angular + Laravel)</h1>
+
+  <form (ngSubmit)="addTask()" class="form">
+    <input
+      type="text"
+      placeholder="Título de la tarea"
+      [(ngModel)]="newTaskTitle"
+      name="title"
+      required
+    />
+
+    <input
+      type="text"
+      placeholder="Descripción (opcional)"
+      [(ngModel)]="newTaskDescription"
+      name="description"
+    />
+
+    <button type="submit">Agregar</button>
+  </form>
+
+  <p *ngIf="isLoading">Cargando tareas...</p>
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <ul class="task-list">
+    <li *ngFor="let task of tasks" [class.completed]="task.completed">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="task.completed"
+          (change)="toggleCompleted(task)"
+        />
+        <span class="task-title">{{ task.title }}</span>
+      </label>
+
+      <span class="task-desc" *ngIf="task.description">
+        - {{ task.description }}
+      </span>
+
+      <button (click)="deleteTask(task)">Eliminar</button>
+    </li>
+  </ul>
+</div>
